@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Event extends CI_Controller {
+class HomeEdu extends CI_Controller {
 
     /**
      * Index Page for this controller.
@@ -20,7 +20,7 @@ class Event extends CI_Controller {
     public function index()
     {
         $this->load->view('mianHeader');
-        $this->load->view('eventBodyView');
+        $this->load->view('homeEduBodyView');
         $this->load->view('mainFooter');
     }
     
