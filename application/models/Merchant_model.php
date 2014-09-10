@@ -45,5 +45,22 @@ class Merchant_model extends CI_Model{
         $this->db->delete('t_bas_merchant');
     }
 
+    //查询商户信息
+    public function merchant_query($currentpage,$pagesize){
+        if($currentpage==0){
+            $currentpage=1;
+        }
+        $start_index=($currentpage-1)*$pagesize;
+        $this->db->select('m.merchant_name,m.contact,m.license,m.address,m.scope,m.store,p.person_name,
+        p.telephone,s.site_name,s.location,s.describe,s.transport');
+        $this->db->from('t_bas_merchant as m');
+        $this->db->join('t_bas_person as p','p.person_id=m.person_id');
+        $this->db->join('t_bas_site as s','s.site_id=m.site_id');
+        $this->db->orderby('m.merchant_id','desc');
+        $this->db->limit($start_index,$pagesize);
+        $this->db->get();
+
+    }
+
 }
 ?>
