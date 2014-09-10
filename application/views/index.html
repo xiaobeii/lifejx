@@ -1,10 +1,102 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<title>403 Forbidden</title>
-</head>
-<body>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>生活嘉兴</title>
 
-<p>Directory access is forbidden.</p>
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="css/header.css" />
+    <link type="text/css" rel="stylesheet" href="css/footer.css" />
+    <link type="text/css" rel="stylesheet" href="css/widget.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="all">  <!--允许搜索引擎抓取全部内容-->
+
+</head>
+
+<body>
+<div class="notice-msg"></div>
+
+<div class="header-bar">
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <ul>
+            <li class="selected">活动</li>
+            <li>场地</li>
+            <li>服务</li>
+            <li>店铺</li>
+        </ul>
+        <div class="head"></div>
+    </div>
+</div>
+
+<div class="img-bar">
+    <div class="img">
+        <a href="edit-activity.html">
+            <img src="images/ims.jpg">
+        </a>
+    </div>
+</div>
+
+
+<div class="each-layer">
+    <div class="title">
+        <div class="btn-sort btn-sort-sel btn-sort-first">热门</div>
+        <div class="btn-sort ">最新</div>
+        <div class="btn-select" id="btn-select"></div>
+    </div>
+
+    <div class="each-bar">
+        <div class="each">
+            <div class="img"></div>
+            <div class="activity-type">免费</div>
+            <div class="activity-name">嘉兴车友会</div>
+            <div class="activity-user"></div>
+            <div class="activity-time">时间：2014/8/30 13:00</div>
+            <div class="activity-place">地点：南湖区 月河</div>
+            <div class="tags">#沙龙 #会友</div>
+            <div class="attention-num">关注度</div>
+        </div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="each"></div>
+        <div class="clear-fix"></div>
+    </div>
+
+</div>
+
+<div class="footer">
+
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/widget.js"></script>
+
+<script type="text/javascript">
+    $(function()
+    {
+        WidgetSelect({
+            parent : $("#btn-select"),
+            width : 85,
+            height : 25,
+            value : ['星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日'],
+            callback : function(){},
+            isCallback : true
+        });
+
+    })
+</script>
 
 </body>
+
 </html>

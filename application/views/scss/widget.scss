@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "base/base";
+
+
+.widget-select-box{
+  border: 1px solid $cRed;
+  span{
+    color: $cRed;
+    padding-left: 20px;
+  }
+  .widget-select-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:hover{
+    }
+  }
+  .widget-select-value{
+    position: absolute;
+    background-color: #e3e3e3;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 80;
+    display: none;
+    li{
+      list-style: none;
+      padding-left: 20px;
+      height: 30px;
+      line-height: 30px;
+      margin: 1px 0;
+      z-index: 80;
+      &:hover{
+        color: $cRed;
+        background-color: #d0d0d0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+.clear-fix {
+  clear: both; }
+
+.loading-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000; }
+  .loading-layer:before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    content: url("../images/loading.gif"); }
+
+.USER_ICON, .header-bar .header .head, .a-header .header .head {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: slateblue;
+  overflow: hidden; }
+
+.header-bar, .a-header {
+  width: 100%;
+  min-width: 1000px;
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid #aaaaaa;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100; }
+  .header-bar .header, .a-header .header {
+    width: 95%;
+    min-width: 1000px;
+    height: 70px;
+    margin: auto; }
+    .header-bar .header .logo, .a-header .header .logo {
+      background-color: white;
+      width: 200px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 26px;
+      text-align: center;
+      float: left; }
+      .header-bar .header .logo img, .a-header .header .logo img {
+        width: 190px; }
+    .header-bar .header ul, .a-header .header ul {
+      display: block;
+      margin-left: 60px;
+      margin-top: 0;
+      float: left; }
+    .header-bar .header li, .a-header .header li {
+      display: block;
+      float: left;
+      width: 120px;
+      text-align: center;
+      line-height: 69px;
+      height: 67px;
+      font-size: 18px;
+      color: #aaaaaa; }
+      .header-bar .header li:hover, .a-header .header li:hover {
+        color: #ff6666;
+        border-bottom: 4px solid #ff6666; }
+    .header-bar .header .head, .a-header .header .head {
+      float: right;
+      margin-top: 14px; }

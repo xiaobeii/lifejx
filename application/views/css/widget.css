@@ -1,0 +1,58 @@
+.clear-fix {
+  clear: both; }
+
+.loading-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000; }
+  .loading-layer:before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    content: url("../images/loading.gif"); }
+
+.USER_ICON {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: slateblue;
+  overflow: hidden; }
+
+.widget-select-box {
+  border: 1px solid #ff6666; }
+  .widget-select-box span {
+    color: #ff6666;
+    padding-left: 20px; }
+  .widget-select-box .widget-select-btn {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .widget-select-box .widget-select-value {
+    position: absolute;
+    background-color: #e3e3e3;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 80;
+    display: none; }
+    .widget-select-box .widget-select-value li {
+      list-style: none;
+      padding-left: 20px;
+      height: 30px;
+      line-height: 30px;
+      margin: 1px 0;
+      z-index: 80; }
+      .widget-select-box .widget-select-value li:hover {
+        color: #ff6666;
+        background-color: #d0d0d0; }

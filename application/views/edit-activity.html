@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>添加-活动</title>
+
+    <link type="text/css" rel="stylesheet" href="css/edit-activity.css" />
+    <link type="text/css" rel="stylesheet" href="css/header.css"/>
+</head>
+<body>
+
+<div class="header-bar">
+    <div class="header">
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+        <ul>
+            <li class="selected">活动</li>
+            <li>场地</li>
+            <li>服务</li>
+            <li>店铺</li>
+        </ul>
+        <div class="head"></div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="left-bar">
+        <div class="edit-text">添加活动</div>
+        <div class="add-each">
+            <span>活动标题</span>
+            <input>
+        </div>
+        <div class="add-each">
+            <span>联系方式</span>
+            <input>
+        </div>
+        <div class="add-each">
+            <span>活动时间</span>
+            <input>
+        </div>
+        <div class="add-each">
+            <span>主办方</span>
+            <input>
+        </div>
+
+        <div class="add-line"></div>
+        <div class="add-each">
+            <span>活动描述</span>
+            <div class="area-box">
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <div class="add-each">
+            <span>活动地点</span>
+            <div class="area-box">
+                <div class="map-box" id="iCenter">
+                    <div class="address">
+                        <input value="详细地址">
+                    </div>
+                    <div class="small-map-box" id="small-map"></div>
+                    <!--div class='big-map-box' id='big-map-box'>
+                        <div class='big-map-bg'>
+                            <div class='close-btn'></div>
+                            <div class='search-box'><input></div>
+                            <div class='big-map-amap'></div>
+                        </div>
+                    </div-->
+                </div>
+            </div>
+        </div>
+
+        <div class="add-each">
+            <span>活动海报</span>
+            <div class="area-box">
+                <div class="add-pic"></div>
+                <div class="add-pic"></div>
+                <div class="add-pic"></div>
+                <div class="add-pic"></div>
+                <div class="add-pic"></div>
+                <div class="add-pic"></div>
+            </div>
+        </div>
+
+        <div class="add-each">
+            <span>注意事项</span>
+            <div class="area-box">
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <div class="add-space">
+            <div class="btn-submit">提交</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/widget.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script language="javascript" src="http://webapi.amap.com/maps?v=1.3&key=81feb1094e8ee29b307a193e52a656c2"></script>
+
+<script>
+    $(function(){
+        CreateMap();
+    })
+</script>
+
+</body>
+</html>

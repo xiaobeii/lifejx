@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "mixins";
+//公共对象
+
+//清除浮动
+.clear-fix{
+  clear: both;
+}
+
+//等待框
+.loading-layer{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000;
+  &:before{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    content: url("../images/loading.gif");
+  }
+}
+
+.USER_ICON{
+  width: 45px;
+  height: 45px;
+  @include borderRadius(50%);
+  background-color: slateblue;
+  overflow: hidden;
+}

@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import "../base/base";
+
+
+.header-bar{
+  width: 100%;
+  min-width: $min-width;
+  height: $headerHeight;
+  background-color: white;
+  border-bottom: 1px solid $cGray;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  .header{
+    width: 95%;
+    min-width: $min-width;
+    height: $headerHeight;
+    margin: auto;
+
+    .logo{
+      background-color: white;
+      width: 200px;
+      height: $headerHeight;
+      line-height: $headerHeight;
+      font-size: 26px;
+      text-align: center;
+      float: left;
+
+      img{
+        width: 190px;
+      }
+    }
+    ul{
+      display: block;
+      margin-left: 60px;
+      margin-top: 0;
+      float: left;
+    }
+    li{
+      display: block;
+      float: left;
+      width: 120px;
+      text-align: center;
+      line-height: $headerHeight - 1;
+      height: $headerHeight - 3;
+      font-size: 18px;
+      color: $cGray;
+      &:hover{
+        color: $cRed;
+        border-bottom: 4px solid $cRed;
+      }
+    }
+    li.selected{
+    }
+    .head{
+      @extend .USER_ICON;
+      float: right;
+      margin-top: ($headerHeight - 42)/2;
+    }
+  }
+}
+
+.a-header{
+  @extend .header-bar;
+
+}
+

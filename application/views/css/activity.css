@@ -1,0 +1,361 @@
+@charset "UTF-8";
+.clear-fix {
+  clear: both; }
+
+.loading-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000; }
+  .loading-layer:before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    content: url("../images/loading.gif"); }
+
+.USER_ICON, .a-title-bar .user .head .icon, .left-panel .about-me .head .icon, .left-panel .each-message .head .icon {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: slateblue;
+  overflow: hidden; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
+form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+div {
+  position: relative; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-weight: normal;
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%; }
+
+:before, :after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+body {
+  font-family: Arial, Microsoft YaHei; }
+
+input, label, select, option, textarea, button, fieldset, legend {
+  font-family: Arial, Microsoft YaHei; }
+
+/*
+华文细黑：STHeiti Light [STXihei]
+华文黑体：STHeiti
+华文楷体：STKaiti
+华文宋体：STSong
+华文仿宋：STFangsong
+俪黑 Pro：LiHei Pro Medium
+俪宋 Pro：LiSong Pro Light
+标楷体：BiauKai
+苹果俪中黑：Apple LiGothic Medium
+苹果俪细宋：Apple LiSung Light
+Windows的一些：
+新细明体：PMingLiU
+细明体：MingLiU
+标楷体：DFKai-SB
+黑体：SimHei
+宋体：SimSun
+新宋体：NSimSun
+仿宋：FangSong
+楷体：KaiTi
+仿宋_GB2312：FangSong_GB2312
+楷体_GB2312：KaiTi_GB2312
+微软正黑体：Microsoft JhengHei
+微软雅黑体：Microsoft YaHei
+装Office会生出来的一些：
+隶书：LiSu
+幼圆：YouYuan
+华文细黑：STXihei
+华文楷体：STKaiti
+华文宋体：STSong
+华文中宋：STZhongsong
+华文仿宋：STFangsong
+方正舒体：FZShuTi
+方正姚体：FZYaoti
+华文彩云：STCaiyun
+华文琥珀：STHupo
+华文隶书：STLiti
+华文行楷：STXingkai
+华文新魏：STXinwei
+*/
+.clear-fix {
+  clear: both; }
+
+.loading-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000; }
+  .loading-layer:before {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    overflow: hidden;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    background-color: gray;
+    border-radius: 20px;
+    content: url("../images/loading.gif"); }
+
+.USER_ICON, .a-title-bar .user .head .icon, .left-panel .about-me .head .icon, .left-panel .each-message .head .icon {
+  width: 45px;
+  height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: slateblue;
+  overflow: hidden; }
+
+.BTN_NORMAL, .fix-line .middle .box .logo {
+  width: 80px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  background-color: #ff6666; }
+
+.a-title-bar {
+  margin: 70px 0 0 0;
+  width: 100%;
+  background-color: white; }
+  .a-title-bar .user {
+    width: 850px;
+    height: 60px;
+    padding: 90px 0 0 150px;
+    margin: auto; }
+    .a-title-bar .user .head {
+      width: 120px;
+      height: 30px;
+      padding-top: 120px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center; }
+      .a-title-bar .user .head .icon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 70px;
+        height: 70px; }
+    .a-title-bar .user .activity-info {
+      width: 400px;
+      height: 100%;
+      float: left;
+      margin-left: 50px; }
+      .a-title-bar .user .activity-info .name {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        width: 300px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px; }
+      .a-title-bar .user .activity-info .contact {
+        position: absolute;
+        left: 0;
+        bottom: 15px; }
+
+.main {
+  width: 1000px;
+  margin: auto; }
+
+.activity-bg {
+  background-color: #f5f5f5; }
+
+.about-comments-bg {
+  background-color: white; }
+
+.left-panel {
+  width: 760px; }
+  .left-panel .title {
+    height: 180px;
+    line-height: 180px;
+    font-size: 48px; }
+  .left-panel .imgs {
+    width: 760px;
+    height: 400px;
+    background-color: darkcyan; }
+  .left-panel .des, .left-panel .time, .left-panel .description, .left-panel .attention, .left-panel .map {
+    width: 600px;
+    padding: 40px 40px 40px 120px;
+    border-top: 1px solid #aaaaaa;
+    line-height: 25px;
+    font-size: 15px; }
+    .left-panel .des:before, .left-panel .time:before, .left-panel .description:before, .left-panel .attention:before, .left-panel .map:before {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 16px; }
+  .left-panel .time:before {
+    content: '时间'; }
+  .left-panel .description:before {
+    content: '描述'; }
+  .left-panel .attention:before {
+    content: '注意事项'; }
+  .left-panel .map:before {
+    content: '地图'; }
+  .left-panel .about-me {
+    width: 100%;
+    height: 230px;
+    border-bottom: 2px solid #aaaaaa;
+    color: #4C4746; }
+    .left-panel .about-me:before {
+      content: '关于我';
+      position: absolute;
+      font-size: 20px;
+      font-weight: 900;
+      top: 30px;
+      left: 52px; }
+    .left-panel .about-me .head {
+      width: 120px;
+      height: 30px;
+      padding: 90px 0 0 0;
+      text-align: center;
+      position: absolute;
+      top: 60px;
+      left: 20px; }
+      .left-panel .about-me .head .icon {
+        position: absolute;
+        top: 10px;
+        left: 35px;
+        width: 50px;
+        height: 50px; }
+    .left-panel .about-me .sign {
+      width: 500px;
+      position: absolute;
+      left: 180px;
+      top: 90px; }
+    .left-panel .about-me .credit {
+      width: 100px;
+      padding: 0 0 0 60px;
+      position: absolute;
+      bottom: 10px;
+      left: 30px; }
+      .left-panel .about-me .credit:before {
+        content: '信用';
+        position: absolute;
+        left: 0; }
+    .left-panel .about-me .approve {
+      width: 100px;
+      padding: 0 0 0 90px;
+      position: absolute;
+      bottom: 10px;
+      left: 250px; }
+      .left-panel .about-me .approve:before {
+        content: '认证情况：';
+        position: absolute;
+        left: 0; }
+  .left-panel .discuss-num {
+    height: 200px;
+    line-height: 200px;
+    padding: 0 0 0 20px;
+    font-weight: 900px;
+    font-size: 20px; }
+  .left-panel .btn-discuss {
+    width: 95%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    margin: 0 0 30px 0;
+    font-size: 15px; }
+  .left-panel .each-message {
+    width: 600px;
+    min-height: 60px;
+    padding: 20px 20px 40px 140px;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    color: #939393; }
+    .left-panel .each-message .head {
+      width: 120px;
+      height: 30px;
+      padding: 70px 0 0 0;
+      text-align: center;
+      position: absolute;
+      font-size: 14px;
+      top: 20px;
+      left: 0px;
+      color: #B6B6B6; }
+      .left-panel .each-message .head .icon {
+        position: absolute;
+        top: 0px;
+        left: 35px;
+        width: 50px;
+        height: 50px; }
+    .left-panel .each-message .message-time {
+      height: 30px;
+      width: 600px;
+      position: absolute;
+      bottom: 0px;
+      left: 140px;
+      color: #AEB0AF;
+      border-bottom: 1px solid #F1F1F1; }
+
+.fix-line {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900; }
+  .fix-line .middle {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: skyblue; }
+    .fix-line .middle .box {
+      width: 220px;
+      position: absolute;
+      background-color: darkcyan;
+      padding: 10px 0;
+      right: 0;
+      top: 60px; }
+      .fix-line .middle .box input {
+        display: block;
+        width: 180px;
+        padding: 5px 5px;
+        margin: 0px auto 10px auto;
+        border: 1px solid gray; }
+      .fix-line .middle .box .logo {
+        height: 30px;
+        line-height: 30px;
+        width: 188px;
+        margin: auto; }
